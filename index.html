@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<title>Simon Game | Test Your Memory</title>
+
+	<!--Link to css and js files-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" type="text/javascript"></script>
+
+	<!--Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+</head>
+<body>
+  <h1>Simon Game</h1>
+  <h2 class="talk" id="again">Oops! Wrong step. Try again.</h2>
+  <h2 class="talk" id="over">Awww! Wrong step! Start over from the top!</h2>
+  <h2 class="talk" id="won">CONGRATS! You won SIMON!</h2>
+  <div id="game">
+      <div id="green" class="choice"></div>
+      <div id="red" class="choice"></div>
+      <div id="yellow" class="choice"></div>
+      <div id="blue" class="choice"></div>
+        <div id="game-start-background">
+        <div id="game-start">
+        <p id="title">Simon</p>
+        <div class="align">
+          <button type="button" id="start"></button>
+          <p>Default</p>
+        </div>
+        <div class="align">
+          <button type="button" id="strict"></button>
+          <p>Strict</p>
+        </div>
+        <div class="align">
+          <div id="screen"></div>
+          <p id="count">Count</p>
+        </div>
+        <div id="on-off">
+          <p>On/Off</p>
+          <input type="checkbox" id="off" class="toggle" checked>
+        </div>
+       </div>
+      </div>
+        <audio id="sound1">
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mp3">
+        </audio>
+        <audio id="sound2">
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mp3">
+        </audio>
+        <audio id="sound3">
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mp3">
+        </audio>
+        <audio id="sound4">
+          <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mp3">
+        </audio>
+  </div>
+</body>
+
+</html>
